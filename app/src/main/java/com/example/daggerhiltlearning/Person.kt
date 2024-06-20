@@ -1,11 +1,9 @@
 package com.example.daggerhiltlearning
 
 import android.util.Log
+import javax.inject.Inject
 
-class Person(private val condition: PersonCondition) {  /* <- This means that my
-    Person class depends on the PersonResponsibilities class.
-    There can be as many such dependencies as you like, because there are times when Person is needed
-    in different fragments activity. This is what the hilt library will simplify. */
+class Person @Inject constructor(private val condition: PersonCondition) {
 
     fun goStudy(){
         condition.code()
@@ -19,7 +17,9 @@ class Person(private val condition: PersonCondition) {  /* <- This means that my
     }
 }
 
-class PersonCondition{
+/*@Inject constructor() indicates that hilt can find classes and create exemplar*/
+
+class PersonCondition @Inject constructor(){
     fun sleep(){
         Log.d("tag", "Some logic with sleep part here...")
     }
