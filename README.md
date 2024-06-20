@@ -49,5 +49,5 @@ class MainActivity : ComponentActivity() {
 }
 ```
 И да, действительно всё работает
-![logs](https://imgur.com/a/cUEt6WQ)
+![logs](https://github.com/[MishaNikolaev/DaggerHiltLearning/raw/master](https://github.com/MishaNikolaev/DaggerHiltLearning/blob/master/bandicam%202024-06-20%2014-02-33-644.jpg))
 
