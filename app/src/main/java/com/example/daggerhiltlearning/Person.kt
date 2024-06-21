@@ -3,7 +3,8 @@ package com.example.daggerhiltlearning
 import android.util.Log
 import javax.inject.Inject
 
-class Person @Inject constructor(private val condition: PersonCondition) {
+
+class Person (private val condition: PersonCondition) {
 
     fun goStudy(){
         condition.code()
@@ -17,9 +18,7 @@ class Person @Inject constructor(private val condition: PersonCondition) {
     }
 }
 
-/*@Inject constructor() indicates that hilt can find classes and create exemplar*/
-
-class PersonCondition @Inject constructor(){
+class PersonCondition{
     fun sleep(){
         Log.d("tag", "Some logic with sleep part here...")
     }
