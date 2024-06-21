@@ -33,7 +33,7 @@ class PersonCondition{
 Теперь нам нужно сделать так, чтобы hilt всё это инициализировал. Создадим object Module.
 Пометим его аннотацией **@Module**
 Указываем аннотацию **@InstallIn** на то, где будет установлен этот модуль. 
-![components](https://github.com/MishaNikolaev/DaggerHiltLearning/blob/dagger-hilt-viewmodel/component-hierarchy.png)
+![components](https://github.com/MishaNikolaev/DaggerHiltLearning/blob/dagger-hilt-viewmodel/component-hierarchy.jpg)
 Выбираем SingletonComponent, чтобы доступ был в любом месте. 
 Прописывем аннотацию **Provides**. Получаем:
 ```Kotlin
